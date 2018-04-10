@@ -6,6 +6,7 @@ RUN mkdir -p /opt/app && cd /opt/app &&\
     rm -rf /root/.npm /tmp/npm-*
 
 WORKDIR /opt/app
+COPY config.json config/config.json
 
 EXPOSE 7547
 
